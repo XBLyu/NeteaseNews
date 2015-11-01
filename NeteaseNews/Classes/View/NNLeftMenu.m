@@ -7,10 +7,11 @@
 //
 
 #import "NNLeftMenu.h"
+#import "NNLeftMenuButton.h"
 
 @interface NNLeftMenu ()
 
-@property (nonatomic, weak) UIButton *selectedBtn;
+@property (nonatomic, weak) NNLeftMenuButton *selectedBtn;
 
 @end
 
@@ -21,14 +22,12 @@
     if (self) {
         
         // 设置菜单frame
-        CGFloat side = 80;
-        self.y = side;
-        self.width = 200;
-        self.height = [UIScreen mainScreen].bounds.size.height - (side * 2);
         self.backgroundColor = [UIColor clearColor];
         
-        CGFloat alpha = 80;
         
+        
+        //添加按钮
+        CGFloat alpha = 80;
         [self addButtonWithTitle:@"新闻" icon:@"sidebar_nav_news" bgColor:XBColorRGBA(202, 68, 73, alpha)];
         [self addButtonWithTitle:@"订阅" icon:@"sidebar_nav_reading" bgColor:XBColorRGBA(190, 111, 69, alpha)];
         [self addButtonWithTitle:@"图片" icon:@"sidebar_nav_photo" bgColor:XBColorRGBA(76, 132, 190, alpha)];
@@ -47,8 +46,8 @@
     _delegate = delegate;
     
     // 默认选中新闻按钮
-    [self btnClick:[self.subviews firstObject]];
-    //    [self buttonClick:self.subviews[1]];
+//    [self btnClick:[self.subviews firstObject]];
+    [self btnClick:self.subviews[0]];
 }
 
 
@@ -61,8 +60,8 @@
  *
  *  @return 按钮
  */
-- (UIButton *)addButtonWithTitle:(NSString *)title icon:(NSString *)icon bgColor:(UIColor *)bgColor {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+- (NNLeftMenuButton *)addButtonWithTitle:(NSString *)title icon:(NSString *)icon bgColor:(UIColor *)bgColor {
+    NNLeftMenuButton *btn = [NNLeftMenuButton buttonWithType:UIButtonTypeCustom];
     
     //设置文字
     [btn setTitle:title forState:UIControlStateNormal];
@@ -81,10 +80,11 @@
     btn.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
     
     // 添加点击事件
-    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
     
     // 加载
     [self addSubview:btn];
+    btn.tag = self.subviews.count - 1;
     return btn;
 }
 
@@ -97,26 +97,27 @@
     CGFloat btnH = self.height / btnCount;
     
     for (int i = 0; i < btnCount; i++) {
-        UIButton *btn = self.subviews[i];
+        NNLeftMenuButton *btn = self.subviews[i];
         btn.width = btnW;
         btn.height = btnH;
         btn.y = btnH * i;
-        btn.tag = i;
     }
 }
 
 
 
-- (void)btnClick:(UIButton *)button {
+- (void)btnClick:(NNLeftMenuButton *)button {
     
+    // 先 通知代理
+    if ([self.delegate respondsToSelector:@selector(leftMenu:didSelecatedButtonFromIndex:toIndex:)]) {
+        [self.delegate leftMenu:self didSelecatedButtonFromIndex:(int)self.selectedBtn.tag toIndex:(int)button.tag];
+    }
+
     // 按钮状态控制
     self.selectedBtn.selected = NO;
     button.selected = YES;
     self.selectedBtn = button;
     
-    if ([self.delegate respondsToSelector:@selector(leftMenu:didSelecatedButtonFromIndex:toIndex:)]) {
-        [self.delegate leftMenu:self didSelecatedButtonFromIndex:(int)self.selectedBtn.tag toIndex:(int)button.tag];
     }
-}
 
 @end

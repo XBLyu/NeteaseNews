@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048691FE1BE3DB1B00D4906F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048691FD1BE3DB1B00D4906F /* main.m */; };
-		048692011BE3DB1B00D4906F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048692001BE3DB1B00D4906F /* AppDelegate.m */; };
+		045851D61BE62E0B00951D17 /* NNLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 045851D51BE62E0B00951D17 /* NNLeftMenuButton.m */; };
+		045851D91BE6538B00951D17 /* NNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 045851D81BE6538B00951D17 /* NNNavigationBar.m */; };
+		045851DC1BE6594700951D17 /* NNAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045851DB1BE6594700951D17 /* NNAdViewController.m */; };
+		045851E21BE65C1700951D17 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045851E11BE65C1700951D17 /* Default-568h@2x.png */; };
+		045851E61BE6640E00951D17 /* NNRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045851E41BE6640E00951D17 /* NNRightMenuViewController.m */; };
+		045851E71BE6640E00951D17 /* NNRightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045851E51BE6640E00951D17 /* NNRightMenuViewController.xib */; };
+		045851EA1BE6871B00951D17 /* NNRightMenuCenterViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 045851E91BE6871B00951D17 /* NNRightMenuCenterViewRow.m */; };
+		045851EC1BE6882E00951D17 /* NNRightMenuCenterViewRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045851EB1BE6882E00951D17 /* NNRightMenuCenterViewRow.xib */; };
 		048692041BE3DB1B00D4906F /* NeteaseNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048692021BE3DB1B00D4906F /* NeteaseNews.xcdatamodeld */; };
-		048692071BE3DB1B00D4906F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048692061BE3DB1B00D4906F /* ViewController.m */; };
-		0486920A1BE3DB1B00D4906F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048692081BE3DB1B00D4906F /* Main.storyboard */; };
 		0486920C1BE3DB1B00D4906F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0486920B1BE3DB1B00D4906F /* Images.xcassets */; };
-		0486920F1BE3DB1B00D4906F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0486920D1BE3DB1B00D4906F /* LaunchScreen.xib */; };
 		0486921B1BE3DB1B00D4906F /* NeteaseNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486921A1BE3DB1B00D4906F /* NeteaseNewsTests.m */; };
+		04ABA3A21BE5487B00DFA49A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA38F1BE5487B00DFA49A /* UIBarButtonItem+Extension.m */; };
+		04ABA3A31BE5487B00DFA49A /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3911BE5487B00DFA49A /* UIImage+Extension.m */; };
+		04ABA3A41BE5487B00DFA49A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3931BE5487B00DFA49A /* UIView+Extension.m */; };
+		04ABA3A51BE5487B00DFA49A /* NNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3961BE5487B00DFA49A /* NNMainViewController.m */; };
+		04ABA3A61BE5487B00DFA49A /* NNNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3981BE5487B00DFA49A /* NNNavgationController.m */; };
+		04ABA3A71BE5487B00DFA49A /* NNNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA39A1BE5487B00DFA49A /* NNNewsTableViewController.m */; };
+		04ABA3A81BE5487B00DFA49A /* NNReadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA39C1BE5487B00DFA49A /* NNReadingTableViewController.m */; };
+		04ABA3A91BE5487B00DFA49A /* NNLeftMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA39F1BE5487B00DFA49A /* NNLeftMenu.m */; };
+		04ABA3AA1BE5487B00DFA49A /* NNTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3A11BE5487B00DFA49A /* NNTitleView.m */; };
+		04ABA3AC1BE548C500DFA49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ABA3AB1BE548C500DFA49A /* Main.storyboard */; };
+		04ABA3AE1BE548D500DFA49A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3AD1BE548D500DFA49A /* main.m */; };
+		04ABA3B11BE548E200DFA49A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA3B01BE548E200DFA49A /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +43,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045851D31BE617C600951D17 /* HMSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
+		045851D41BE62E0B00951D17 /* NNLeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLeftMenuButton.h; sourceTree = "<group>"; };
+		045851D51BE62E0B00951D17 /* NNLeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLeftMenuButton.m; sourceTree = "<group>"; };
+		045851D71BE6538B00951D17 /* NNNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNNavigationBar.h; sourceTree = "<group>"; };
+		045851D81BE6538B00951D17 /* NNNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNNavigationBar.m; sourceTree = "<group>"; };
+		045851DA1BE6594700951D17 /* NNAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNAdViewController.h; sourceTree = "<group>"; };
+		045851DB1BE6594700951D17 /* NNAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNAdViewController.m; sourceTree = "<group>"; };
+		045851E11BE65C1700951D17 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default-568h@2x.png"; sourceTree = "<group>"; };
+		045851E31BE6640E00951D17 /* NNRightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNRightMenuViewController.h; sourceTree = "<group>"; };
+		045851E41BE6640E00951D17 /* NNRightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNRightMenuViewController.m; sourceTree = "<group>"; };
+		045851E51BE6640E00951D17 /* NNRightMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NNRightMenuViewController.xib; sourceTree = "<group>"; };
+		045851E81BE6871B00951D17 /* NNRightMenuCenterViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNRightMenuCenterViewRow.h; sourceTree = "<group>"; };
+		045851E91BE6871B00951D17 /* NNRightMenuCenterViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNRightMenuCenterViewRow.m; sourceTree = "<group>"; };
+		045851EB1BE6882E00951D17 /* NNRightMenuCenterViewRow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NNRightMenuCenterViewRow.xib; sourceTree = "<group>"; };
 		048691F81BE3DB1B00D4906F /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048691FC1BE3DB1B00D4906F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		048691FD1BE3DB1B00D4906F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		048691FF1BE3DB1B00D4906F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		048692001BE3DB1B00D4906F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		048692031BE3DB1B00D4906F /* NeteaseNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeteaseNews.xcdatamodel; sourceTree = "<group>"; };
-		048692051BE3DB1B00D4906F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		048692061BE3DB1B00D4906F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		048692091BE3DB1B00D4906F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0486920B1BE3DB1B00D4906F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0486920E1BE3DB1B00D4906F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		048692141BE3DB1B00D4906F /* NeteaseNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeteaseNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048692191BE3DB1B00D4906F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0486921A1BE3DB1B00D4906F /* NeteaseNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeteaseNewsTests.m; sourceTree = "<group>"; };
+		048692341BE3E44E00D4906F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04ABA38E1BE5487B00DFA49A /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		04ABA38F1BE5487B00DFA49A /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		04ABA3901BE5487B00DFA49A /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		04ABA3911BE5487B00DFA49A /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		04ABA3921BE5487B00DFA49A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		04ABA3931BE5487B00DFA49A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		04ABA3951BE5487B00DFA49A /* NNMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNMainViewController.h; sourceTree = "<group>"; };
+		04ABA3961BE5487B00DFA49A /* NNMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNMainViewController.m; sourceTree = "<group>"; };
+		04ABA3971BE5487B00DFA49A /* NNNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNNavgationController.h; sourceTree = "<group>"; };
+		04ABA3981BE5487B00DFA49A /* NNNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNNavgationController.m; sourceTree = "<group>"; };
+		04ABA3991BE5487B00DFA49A /* NNNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNNewsTableViewController.h; sourceTree = "<group>"; };
+		04ABA39A1BE5487B00DFA49A /* NNNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNNewsTableViewController.m; sourceTree = "<group>"; };
+		04ABA39B1BE5487B00DFA49A /* NNReadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNReadingTableViewController.h; sourceTree = "<group>"; };
+		04ABA39C1BE5487B00DFA49A /* NNReadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNReadingTableViewController.m; sourceTree = "<group>"; };
+		04ABA39E1BE5487B00DFA49A /* NNLeftMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLeftMenu.h; sourceTree = "<group>"; };
+		04ABA39F1BE5487B00DFA49A /* NNLeftMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLeftMenu.m; sourceTree = "<group>"; };
+		04ABA3A01BE5487B00DFA49A /* NNTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTitleView.h; sourceTree = "<group>"; };
+		04ABA3A11BE5487B00DFA49A /* NNTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTitleView.m; sourceTree = "<group>"; };
+		04ABA3AB1BE548C500DFA49A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04ABA3AD1BE548D500DFA49A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04ABA3AF1BE548E200DFA49A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04ABA3B01BE548E200DFA49A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +128,11 @@
 		048691FA1BE3DB1B00D4906F /* NeteaseNews */ = {
 			isa = PBXGroup;
 			children = (
-				048691FF1BE3DB1B00D4906F /* AppDelegate.h */,
-				048692001BE3DB1B00D4906F /* AppDelegate.m */,
-				048692051BE3DB1B00D4906F /* ViewController.h */,
-				048692061BE3DB1B00D4906F /* ViewController.m */,
-				048692081BE3DB1B00D4906F /* Main.storyboard */,
-				0486920B1BE3DB1B00D4906F /* Images.xcassets */,
-				0486920D1BE3DB1B00D4906F /* LaunchScreen.xib */,
-				048692021BE3DB1B00D4906F /* NeteaseNews.xcdatamodeld */,
+				04ABA38C1BE5487B00DFA49A /* Classes */,
+				04ABA3AF1BE548E200DFA49A /* AppDelegate.h */,
+				04ABA3B01BE548E200DFA49A /* AppDelegate.m */,
+				04ABA3AD1BE548D500DFA49A /* main.m */,
+				04ABA3AB1BE548C500DFA49A /* Main.storyboard */,
 				048691FB1BE3DB1B00D4906F /* Supporting Files */,
 			);
 			path = NeteaseNews;
@@ -99,8 +141,12 @@
 		048691FB1BE3DB1B00D4906F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				045851D31BE617C600951D17 /* HMSingleton.h */,
+				0486920B1BE3DB1B00D4906F /* Images.xcassets */,
+				045851E11BE65C1700951D17 /* Default-568h@2x.png */,
+				048692021BE3DB1B00D4906F /* NeteaseNews.xcdatamodeld */,
 				048691FC1BE3DB1B00D4906F /* Info.plist */,
-				048691FD1BE3DB1B00D4906F /* main.m */,
+				048692341BE3E44E00D4906F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +166,67 @@
 				048692191BE3DB1B00D4906F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04ABA38C1BE5487B00DFA49A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04ABA38D1BE5487B00DFA49A /* Category */,
+				04ABA3941BE5487B00DFA49A /* Controller */,
+				04ABA39D1BE5487B00DFA49A /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04ABA38D1BE5487B00DFA49A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04ABA38E1BE5487B00DFA49A /* UIBarButtonItem+Extension.h */,
+				04ABA38F1BE5487B00DFA49A /* UIBarButtonItem+Extension.m */,
+				04ABA3901BE5487B00DFA49A /* UIImage+Extension.h */,
+				04ABA3911BE5487B00DFA49A /* UIImage+Extension.m */,
+				04ABA3921BE5487B00DFA49A /* UIView+Extension.h */,
+				04ABA3931BE5487B00DFA49A /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04ABA3941BE5487B00DFA49A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04ABA3951BE5487B00DFA49A /* NNMainViewController.h */,
+				04ABA3961BE5487B00DFA49A /* NNMainViewController.m */,
+				04ABA3971BE5487B00DFA49A /* NNNavgationController.h */,
+				04ABA3981BE5487B00DFA49A /* NNNavgationController.m */,
+				04ABA3991BE5487B00DFA49A /* NNNewsTableViewController.h */,
+				04ABA39A1BE5487B00DFA49A /* NNNewsTableViewController.m */,
+				04ABA39B1BE5487B00DFA49A /* NNReadingTableViewController.h */,
+				04ABA39C1BE5487B00DFA49A /* NNReadingTableViewController.m */,
+				045851DA1BE6594700951D17 /* NNAdViewController.h */,
+				045851DB1BE6594700951D17 /* NNAdViewController.m */,
+				045851E31BE6640E00951D17 /* NNRightMenuViewController.h */,
+				045851E41BE6640E00951D17 /* NNRightMenuViewController.m */,
+				045851E51BE6640E00951D17 /* NNRightMenuViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04ABA39D1BE5487B00DFA49A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04ABA39E1BE5487B00DFA49A /* NNLeftMenu.h */,
+				04ABA39F1BE5487B00DFA49A /* NNLeftMenu.m */,
+				045851D41BE62E0B00951D17 /* NNLeftMenuButton.h */,
+				045851D51BE62E0B00951D17 /* NNLeftMenuButton.m */,
+				04ABA3A01BE5487B00DFA49A /* NNTitleView.h */,
+				04ABA3A11BE5487B00DFA49A /* NNTitleView.m */,
+				045851D71BE6538B00951D17 /* NNNavigationBar.h */,
+				045851D81BE6538B00951D17 /* NNNavigationBar.m */,
+				045851E81BE6871B00951D17 /* NNRightMenuCenterViewRow.h */,
+				045851E91BE6871B00951D17 /* NNRightMenuCenterViewRow.m */,
+				045851EB1BE6882E00951D17 /* NNRightMenuCenterViewRow.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +273,7 @@
 		048691F01BE3DB1B00D4906F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NN;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Moobye;
 				TargetAttributes = {
@@ -202,9 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0486920A1BE3DB1B00D4906F /* Main.storyboard in Resources */,
-				0486920F1BE3DB1B00D4906F /* LaunchScreen.xib in Resources */,
+				045851E71BE6640E00951D17 /* NNRightMenuViewController.xib in Resources */,
 				0486920C1BE3DB1B00D4906F /* Images.xcassets in Resources */,
+				045851E21BE65C1700951D17 /* Default-568h@2x.png in Resources */,
+				04ABA3AC1BE548C500DFA49A /* Main.storyboard in Resources */,
+				045851EC1BE6882E00951D17 /* NNRightMenuCenterViewRow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +332,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ABA3A31BE5487B00DFA49A /* UIImage+Extension.m in Sources */,
+				045851D61BE62E0B00951D17 /* NNLeftMenuButton.m in Sources */,
+				04ABA3A91BE5487B00DFA49A /* NNLeftMenu.m in Sources */,
+				04ABA3A61BE5487B00DFA49A /* NNNavgationController.m in Sources */,
+				045851E61BE6640E00951D17 /* NNRightMenuViewController.m in Sources */,
+				045851EA1BE6871B00951D17 /* NNRightMenuCenterViewRow.m in Sources */,
+				04ABA3A21BE5487B00DFA49A /* UIBarButtonItem+Extension.m in Sources */,
+				04ABA3A71BE5487B00DFA49A /* NNNewsTableViewController.m in Sources */,
+				04ABA3A51BE5487B00DFA49A /* NNMainViewController.m in Sources */,
+				04ABA3A41BE5487B00DFA49A /* UIView+Extension.m in Sources */,
+				04ABA3A81BE5487B00DFA49A /* NNReadingTableViewController.m in Sources */,
+				045851DC1BE6594700951D17 /* NNAdViewController.m in Sources */,
+				04ABA3B11BE548E200DFA49A /* AppDelegate.m in Sources */,
 				048692041BE3DB1B00D4906F /* NeteaseNews.xcdatamodeld in Sources */,
-				048692011BE3DB1B00D4906F /* AppDelegate.m in Sources */,
-				048692071BE3DB1B00D4906F /* ViewController.m in Sources */,
-				048691FE1BE3DB1B00D4906F /* main.m in Sources */,
+				04ABA3AE1BE548D500DFA49A /* main.m in Sources */,
+				04ABA3AA1BE5487B00DFA49A /* NNTitleView.m in Sources */,
+				045851D91BE6538B00951D17 /* NNNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +369,6 @@
 			targetProxy = 048692151BE3DB1B00D4906F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		048692081BE3DB1B00D4906F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				048692091BE3DB1B00D4906F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0486920D1BE3DB1B00D4906F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0486920E1BE3DB1B00D4906F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0486921C1BE3DB1B00D4906F /* Debug */ = {
@@ -353,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/NeteaseNews/NeteaseNews/PrefixHeader.pch;
 				INFOPLIST_FILE = NeteaseNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +469,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/NeteaseNews/NeteaseNews/PrefixHeader.pch;
 				INFOPLIST_FILE = NeteaseNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +530,7 @@
 				048692201BE3DB1B00D4906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		048692211BE3DB1B00D4906F /* Build configuration list for PBXNativeTarget "NeteaseNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +539,7 @@
 				048692231BE3DB1B00D4906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

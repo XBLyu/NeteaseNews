@@ -18,7 +18,11 @@
     button.size = button.currentBackgroundImage.size;
     
     // 监听按钮点击
-    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    return [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchDown];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:button];
+#warning tag 1;
+//    item.tag = 1;
+    return item;
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "NNNavgationController.h"
+#import "NNNavigationBar.h"
 
 @interface NNNavgationController ()
 
@@ -21,6 +22,11 @@
     
     // 设置导航栏背景
     [appearance setBackgroundImage:[UIImage imageNamed:@"top_navigation_background"] forBarMetrics:UIBarMetricsDefault];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setValue:[[NNNavigationBar alloc] init] forKeyPath:@"navigationBar"];
 }
 
 @end

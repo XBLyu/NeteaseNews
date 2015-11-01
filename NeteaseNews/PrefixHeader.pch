@@ -12,4 +12,90 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+// 颜色
+#define XBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define XBColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+
+// 随机色
+#define XBRandomColorRGBA XBColorRGBA(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), 255)
+
+//.m 里的条件编译
+//#if __has_feature(objc_arc)
+//// 编译器是ARC环境
+//#else
+//// 编译器是MRC环境
+//[p release];
+//#endif
+
+// .h文件
+#define HMSingletonH(name) + (instancetype)shared##name;
+
+// .m文件
+#if __has_feature(objc_arc)
+
+#define HMSingletonM(name) \
+static id _instace; \
+\
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instace = [super allocWithZone:zone]; \
+}); \
+return _instace; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instace = [[self alloc] init]; \
+}); \
+return _instace; \
+} \
+\
+- (id)copyWithZone:(NSZone *)zone \
+{ \
+return _instace; \
+}
+
+#else
+
+#define HMSingletonM(name) \
+static id _instace; \
+\
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instace = [super allocWithZone:zone]; \
+}); \
+return _instace; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instace = [[self alloc] init]; \
+}); \
+return _instace; \
+} \
+\
+- (id)copyWithZone:(NSZone *)zone \
+{ \
+return _instace; \
+} \
+\
+- (oneway void)release { } \
+- (id)retain { return self; } \
+- (NSUInteger)retainCount { return 1;} \
+- (id)autorelease { return self;}
+
+#endif
+
 #endif
