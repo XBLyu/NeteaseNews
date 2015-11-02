@@ -28,6 +28,7 @@
 @property (nonatomic, weak) NNNavgationController *showingNavC;
 @property (nonatomic, strong) NNRightMenuViewController *rightMenuVC;
 @property (nonatomic, weak) NNLeftMenu *leftMenu;
+@property (nonatomic, weak) UIButton *arrowBtn;
 
 @end
 
@@ -67,6 +68,7 @@
 //#warning tag = 22
 //    arrowBtn.tag = NNArrowBtnTag;
     [self.view insertSubview:arrowBtn atIndex:1];
+    self.arrowBtn = arrowBtn;
 }
 
 - (void)arrowBtnClick {
@@ -168,6 +170,7 @@
 {
     self.leftMenu.hidden = NO;
     self.rightMenuVC.view.hidden = YES;
+    self.arrowBtn.hidden = NO;
     
     [UIView animateWithDuration:NNNavShowAnimDuration animations:^{
         // 取出正在显示的导航控制器的view
@@ -220,6 +223,7 @@
 {
     self.leftMenu.hidden = YES;
     self.rightMenuVC.view.hidden = NO;
+    self.arrowBtn.hidden = YES;
     
     [UIView animateWithDuration:NNNavShowAnimDuration animations:^{
         // 取出正在显示的导航控制器的view

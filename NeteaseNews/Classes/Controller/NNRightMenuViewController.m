@@ -60,6 +60,9 @@
     
 }
 
+/**
+ *  头像3D旋转动画
+ */
 - (void)didShow {
 //    NSLog(@"Function %s on line %d",__FUNCTION__,__LINE__);
     
@@ -86,7 +89,7 @@
     } completion:^(BOOL finished) {
         // 中间停顿 GCD
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [UIView transitionWithView:self.iconView duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+            [UIView transitionWithView:self.iconView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
                 self.iconView.image = [UIImage imageNamed:@"default_avatar"];
             } completion:nil];
         });
