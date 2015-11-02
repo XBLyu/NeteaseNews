@@ -1,9 +1,9 @@
 //
 //  UIImage+Extension.m
-//  网易新闻
+//  NeteaseNews
 //
-//  Created by apple on 14-7-25.
-//  Copyright (c) 2014年 heima. All rights reserved.
+//  Created by Mac on 15/10/30.
+//  Copyright (c) 2015年 Moobye. All rights reserved.
 //
 
 #import "UIImage+Extension.h"

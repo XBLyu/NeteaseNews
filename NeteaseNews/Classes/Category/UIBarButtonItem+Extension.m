@@ -1,9 +1,9 @@
 //
 //  UIBarButtonItem+Extension.m
-//  黑马微博
+//  NeteaseNews
 //
-//  Created by apple on 14-7-3.
-//  Copyright (c) 2014年 heima. All rights reserved.
+//  Created by Mac on 15/10/30.
+//  Copyright (c) 2015年 Moobye. All rights reserved.
 //
 
 #import "UIBarButtonItem+Extension.h"

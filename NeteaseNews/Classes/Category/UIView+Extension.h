@@ -1,9 +1,9 @@
 //
 //  UIView+Extension.h
-//  黑马微博2期
+//  NeteaseNews
 //
-//  Created by apple on 14-10-7.
-//  Copyright (c) 2014年 heima. All rights reserved.
+//  Created by Mac on 15/10/30.
+//  Copyright (c) 2015年 Moobye. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
